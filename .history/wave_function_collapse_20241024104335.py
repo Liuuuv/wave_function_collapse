@@ -5,7 +5,6 @@ import random as rd
 py.init()
 # py.display.set_caption("base")
 
-FPS = 60
 
 
 blanc=(255,255,255)
@@ -18,7 +17,7 @@ class Affichage:
         self.dimensions=(int(1920*facteur),int(1080*facteur))
         self.fenetre=py.display.set_mode(self.dimensions)
 
-        self.nb_cases=30
+        self.nb_cases=10
 
         self.taille_case=min(self.dimensions[0]//self.nb_cases,self.dimensions[1]//self.nb_cases)
 
@@ -174,7 +173,7 @@ class Affichage:
                 if event.type==py.KEYDOWN:
                     if event.key==py.K_ESCAPE:
                         continuer=False
-            horloge.tick(FPS)
+            horloge.tick(60)
             py.display.set_caption(str(round(horloge.get_fps(),1)))
 
 

@@ -24,7 +24,7 @@ class Affichage:
 
 
         # initialisation de self.liste_tuiles_possibles
-        self.liste_tuiles_possibles=[[1,1,0,0],[1,0,1,0],[0,1,1,1],[1,1,1,1]]
+        self.liste_tuiles_possibles=[[1,1,0,0],[1,0,1,0],[0,1,1,1],[1,1,1,1],[1,0,0,0]]
 
         id_rotations=[]
         for id_tuile in self.liste_tuiles_possibles:

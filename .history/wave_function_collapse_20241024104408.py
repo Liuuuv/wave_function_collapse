@@ -5,7 +5,7 @@ import random as rd
 py.init()
 # py.display.set_caption("base")
 
-FPS = 60
+FPS = 10
 
 
 blanc=(255,255,255)
